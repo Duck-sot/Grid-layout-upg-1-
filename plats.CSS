@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+}
+.container{
+    width: 100%;
+    display: grid;
+
+    grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer "
+}
+.container *{
+    min-height: 150px;
+}
+header{
+    grid-area:header;
+    background-color: orange;
+}
+main{
+    grid-area: main;
+    background-color: purple;
+    height: 1000px;
+    color: wheat;
+    
+}
+aside{
+    grid-area: sidebar;
+    background-color: aqua;
+    height: 1000px;
+    
+}
+footer{
+    grid-area: footer;
+    background-color: sandybrown;
+}
